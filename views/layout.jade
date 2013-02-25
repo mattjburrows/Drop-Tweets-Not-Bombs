@@ -1,0 +1,19 @@
+doctype 5
+html( lang='en' )
+	head
+		title #{title}
+		link( rel='stylesheet', href='/css/style.css' )
+	body
+		header#header.page-header
+			nav.navigation
+				ul
+					li
+						a( href='/' ) Home
+					li
+						a( href='/log-in' ) Login
+					li
+						a( href='/sign-up' ) Signup
+		section#content.page-content
+			block content
+		footer.page-footer
+			p Lorem ipsum dolor sit amet...
